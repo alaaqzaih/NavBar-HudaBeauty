@@ -1,0 +1,44 @@
+.brand-header {
+  font-family: FuturaPT-Book;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 40px 35px 0px 35px;
+  display: flex;
+  align-items: center;
+  .brand {
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 963px) {
+    flex-direction: row-reverse;
+  }
+  .headerLiftQuarter {
+    display: flex;
+    .mapImage {
+      margin-right: 5px;
+    }
+    .Arrow {
+      margin-left: 5px;
+    }
+    @media screen and (max-width: 1020px) {
+      display: none;
+    }
+  }
+  .headerRightQuarter {
+    align-items: center;
+    display: flex;
+    .headerIcon,
+    .headerIconBag {
+      margin-left: 12px;
+    }
+
+    .text {
+      text-decoration: none;
+    }
+  }
+}
+@media screen and (max-width: 1020px) {
+  .headerIcon,
+  .text {
+    display: none;
+  }
+}
